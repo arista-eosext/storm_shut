@@ -87,9 +87,7 @@ class LogTail:
                         resp = switch.runCmds(1, commands)
                         print sc_int + " disabled due to storm control violation"
                         if hold_down >= 1:
-                                #t = Timer(60.0*hold_down, self.Hold_down_act, [sc_int])
-                                # take timer down to seconds
-                                t = Timer(hold_down, self.Hold_down_act, [sc_int])
+                                t = Timer(60.0*hold_down, self.Hold_down_act, [sc_int])
                                 t.start()
 
 # Run 
