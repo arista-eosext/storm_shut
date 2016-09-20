@@ -8,5 +8,5 @@ Includes an optional hold-down timer to reactivate the interface after user-defi
 The script calls the API via the local webserver so it's required to activate this via the CLI as follows
 
 management api http-commands
-   protocol http localhost
-   no shutdown
+  protocol http localhost
+  no shutdown
