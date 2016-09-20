@@ -78,7 +78,7 @@ class LogTail:
                         words = line.split()
 
 # Slice list for Ethernet interface that has active Storm Control Policer
-                        sc_int = words[19]              
+                        sc_int = words[12]              
                         sc_int = sc_int[:-1]
                         Logging.log(STORMCONTROL_INT_SHUT, "Storm control triggered interface " + sc_int + " shutdown")
 
