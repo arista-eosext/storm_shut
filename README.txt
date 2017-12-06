@@ -10,3 +10,5 @@ The script calls the API via the local webserver so it's required to activate th
 management api http-commands
   protocol http localhost
   no shutdown
+
+NOTE: Requires an Arista platform that supports logging of storm-control discards
