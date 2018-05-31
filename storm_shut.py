@@ -50,7 +50,7 @@ hold_down = args.hold_down_timer
 
 #print "Hold-down timer = ", hold_down, "minutes"
 
-switch = Server( "http://admin:@127.0.0.1:8080/command-api" )
+switch = Server( "unix:/var/run/command-api.sock" )
 
 # What log file to watch 
 file = "/var/log/messages"
